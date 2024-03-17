@@ -1,0 +1,22 @@
+{
+  "name": "react-express-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "backend": "npm run dev -w backend",
+    "frontend": "npm run dev -w frontend",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "test:backend": "npm test -w backend",
+    "test:frontend": "npm test -w frontend"
+  },
+  "author": "dstamenkovic",
+  "license": "ISC",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
