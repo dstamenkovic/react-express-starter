@@ -1,7 +1,4 @@
-type Book = {
-  id: string
-  title: string
-}
+import type { Book } from '../types'
 
 type Props = {
   books: Book[]
